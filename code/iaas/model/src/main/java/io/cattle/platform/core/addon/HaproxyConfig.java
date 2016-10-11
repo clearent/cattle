@@ -8,7 +8,8 @@ public class HaproxyConfig {
 
     String global;
     String defaults;
-
+    boolean backendSsl;
+    
     @Field(nullable = true)
     public String getGlobal() {
         return global;
@@ -27,4 +28,12 @@ public class HaproxyConfig {
         this.defaults = defaults;
     }
 
+    @Field(nullable = true)
+    public boolean getBackendSsl(){
+        return backendSsl;
+    }
+    
+    public void setBackendSsl(boolean ssl) {
+        this.backendSsl = ssl;
+    }
 }

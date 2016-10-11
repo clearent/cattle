@@ -452,6 +452,7 @@
         "haproxyConfig" : "r",
         "haproxyConfig.global" : "cru",
         "haproxyConfig.defaults" : "cru",
+        "haproxyConfig.backendSsl" : "cru",
 
         "loadBalancerAppCookieStickinessPolicy" : "r",
         "loadBalancerAppCookieStickinessPolicy.cookie" : "cru",
